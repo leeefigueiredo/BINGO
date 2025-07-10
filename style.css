@@ -7,10 +7,12 @@ body {
 
 img{
     border: 25px solid pink;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 .container {
+    display: flex;
+    flex-direction: row;
   max-width: 600px;
   margin: auto;
   background: #fff;
@@ -50,4 +52,14 @@ button {
   padding: 10px 15px;
   border-radius: 50%;
   font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+    display: flex;
+    flex-direction: column;
+    }
+
 }
